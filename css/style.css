@@ -1,0 +1,83 @@
+#center {
+    padding-top: 50px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#calcTable > tbody > tr > td {
+    width: 100px;
+    text-align: center;
+}
+
+#content-display {
+    width: 300px; 
+    height: 150px;
+    border: 1px solid #0c549b;
+}
+
+#content-display-body {
+    padding-top: 3px;
+    padding-left: 5px;
+    text-align: left; 
+    font-weight: 600;
+    font-size: 20px;   
+    height: 60%;
+    background-color: #00274d;
+    overflow-y: auto;
+    color: #FFFFFF;
+}
+
+#content-display-result {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: right;
+    height: 40%;
+    background-color: #90EE90;
+    padding-right: 5px;
+    overflow-y: auto;
+}
+
+.operation, #clear, #del, #parentheses {
+    background-color: #52527a;
+}
+
+.number {
+    background-color: #00004d;
+}
+
+#equals {
+    background-color: #206020;
+}
+
+.calcBtn {
+    position: relative;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.calcBtn:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.calcBtn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
